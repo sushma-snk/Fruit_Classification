@@ -39,16 +39,6 @@ data_dir = '/content/fruits/fruits-360_dataset/fruits-360/Training'
 file_names=os.listdir(data_dir)
 pd.DataFrame(file_names,columns=['Names'])
 
-# size_number=[]
-# size=[]
-# for file in file_names:
-#     path=os.path.join(data_dir,file)
-#     size_number.append(len(os.listdir(path)))
-#     for img in os.listdir(path):
-#         image=cv2.imread(os.path.join(path,img))
-#         size.append(image.shape)
-# pd.DataFrame(size_number,columns=['size'],index=file_names)
-
 train_image=[]
 label=[]
 for file in file_names:
